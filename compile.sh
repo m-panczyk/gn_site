@@ -7,5 +7,5 @@
 ls *.base.html | while read file
 do
     clearFile=`echo $file | sed 's/.base.html//'`
-    awk '/<main>/ { system("cat '$file'") } { print }' base.html > $clearFile.html
+    awk '/<\/main>/ { system("cat '$file'") } { print }' base.html > $clearFile.html
 done
