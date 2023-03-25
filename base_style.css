@@ -1,0 +1,12 @@
+header {
+    background-color: black;
+}
+nav {
+    background-color: black;
+    display: inline;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
