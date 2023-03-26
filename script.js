@@ -24,3 +24,47 @@ if (css_cookie != "") {
   }
   console.log("css cookie is empty");
 }
+//set var collapsed to false if in landscape mode
+var collapsed;
+if(window.innerHeight > window.innerWidth){
+  collapsed = true;
+}else{
+  collapsed = false;
+}
+var menuLinks = document.getElementsByClassName("menu-link");
+function collapseMenu(){
+  if(collapsed){
+    for(var i = 0; i < menuLinks.length; i++){
+      menuLinks[i].style.display = "block";
+      collapsed = false;
+    }
+  }else{
+      for(var i = 0; i < menuLinks.length; i++){
+        menuLinks[i].style.display = "none";
+        collapsed = true;
+      }
+    } 
+}
+document.getElementById("menu").addEventListener("click", collapseMenu);
+window.addEventListener("resize", function(){
+  if(window.innerHeight < window.innerWidth && collapsed){
+    collapseMenu();
+  } 
+});
+//collapse and hide menu button on window orientation change to landscape
+//and show menu button on window orientation change to portrait
+/*
+function orientationChange(){
+  if(window.innerHeight > window.innerWidth){
+    for(var i = 0; i < menuLinks.length; i++){
+      menuLinks[i].style.display = "block";
+    }
+    }else{
+      for(var i = 0; i < menuLinks.length; i++){
+        menuLinks[i].style.display = "none";
+      }
+    }
+}
+
+window.addEventListener("orientationchange", orientationChange);
+orientationChange();*/

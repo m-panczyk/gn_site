@@ -14,19 +14,29 @@
 }
 [class*="col-"]{
         width: 100%;
-        padding: 12px;
         float: left;
 }
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
   }
-  
+#menu{
+    display: unset;
+}
+.menu-link{
+    display: none;
+}
   @media only screen and (orientation: landscape) {
     /* For desktop: */
     .col-auto {width: auto;} 
-    .col-1 {width: 16%;}
+    .col-1 {width: 50%;}
     .col-2 {width: 100%;}
+    #menu{
+        display: none;
+    }
+    .menu-link{
+        display: unset;
+    }
   }
 .rt-float{
     z-index: 1;
@@ -44,20 +54,19 @@ nav ul {
     overflow: hidden;
 }
 
-nav li {
+nav ul li {
     float: left;
     padding: 0px; 
 }
 
-nav li a {
+nav ul li a {
     display: block;
-    text-align: center;
     padding: 4px 8px;
     height: auto;
     border-style: outset; 
 }
 
-nav li a:hover {
+nav ul li a:hover {
     border-style: inset;
 
 }
