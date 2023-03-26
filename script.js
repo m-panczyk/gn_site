@@ -17,5 +17,10 @@ if (css_cookie != "") {
   document.getElementById("css-link").setAttribute("href", css_cookie);
   document.getElementById("css-list").value = css_cookie;
 }else{
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    console.log('User has dark mode enabled');
+    document.getElementById("css-link").setAttribute("href", "css/dark.css");
+    document.getElementById("css-list").value = "css/dark.css"; 
+  }
   console.log("css cookie is empty");
 }
