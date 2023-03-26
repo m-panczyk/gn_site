@@ -24,32 +24,13 @@
   
   @media only screen and (orientation: landscape) {
     /* For desktop: */
+    .col-auto {width: auto;} 
     .col-1 {width: 16%;}
     .col-2 {width: 100%;}
   }
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li {
-    float: left;
-    border-style: outset; 
-}
-
-nav li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    height: auto;
-    width: auto;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    background-color: #333;
-    color: white;
+.rt-float{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
