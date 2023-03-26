@@ -24,7 +24,6 @@ if (css_cookie != "") {
   }
   console.log("css cookie is empty");
 }
-//set var collapsed to false if in landscape mode
 var collapsed;
 if(window.innerHeight > window.innerWidth){
   collapsed = true;
