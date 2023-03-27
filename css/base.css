@@ -26,8 +26,14 @@
 .menu-link{
     display: none;
 }
+header{
+    text-align: center;
+}
   @media only screen and (orientation: landscape) {
     /* For desktop: */
+header{
+    text-align: left;
+}
     .col-auto {width: auto;} 
     .col-1 {width: 50%;}
     .col-2 {width: 100%;}
@@ -43,6 +49,9 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+body{
+    margin: 8%;
 }
 h1{
     font-size: medium;
