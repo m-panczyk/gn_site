@@ -15,14 +15,14 @@
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
-    float: left;
-  }
+}
 #menu{
     display: unset;
 }
 #logo{
     width: auto;
     height: auto;
+    padding: 8px;
 }
 .menu-link{
     display: none;
@@ -41,6 +41,7 @@ header{
     #logo{
         width: auto;
         height: auto;
+        float:left;
     }
     .menu-link{
         display: unset;
