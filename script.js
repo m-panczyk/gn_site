@@ -34,12 +34,14 @@ var menuLinks = document.getElementsByClassName("menu-link");
 function collapseMenu(){
   if(collapsed){
     for(var i = 0; i < menuLinks.length; i++){
-      menuLinks[i].style.display = "block";
+      //menuLinks[i].style.display = "block";
+      menuLinks[i].className += " hidden"
       collapsed = false;
     }
   }else{
       for(var i = 0; i < menuLinks.length; i++){
-        menuLinks[i].style.display = "none";
+        //menuLinks[i].style.display = "none";
+        menuLinks[i].className = menuLinks[i].className.replace(" hidden", "");
         collapsed = true;
       }
     } 

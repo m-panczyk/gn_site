@@ -24,7 +24,8 @@
     height: auto;
     padding: 8px;
 }
-.menu-link{
+
+.hidden{
     display: none;
 }
 header{
@@ -40,6 +41,7 @@ header{
     }
     #logo{
         width: auto;
+        max-width: -webkit-fill-available;
         height: auto;
         float:left;
     }
