@@ -7,5 +7,22 @@
 ls *.base.html | while read file
 do
     clearFile=`echo $file | sed 's/.base.html//'`
-    awk '/<\/main>/ { system("cat '$file'") } { print }' base.html > $clearFile.html
+    echo > $clearFile.html
+    while read line
+    do
+        if [[ $line == *"</head>"* ]]; then
+            echo "head found"
+            #print first line of $file
+            head -n1 $file >> $clearFile.html
+            head -n1 $file
+            echo $line >> $clearFile.html
+        elif grep -q "</main>" <<< "$line"; then
+            echo "main found"
+            tail -n+2 $file >> $clearFile.html
+            echo $line >> $clearFile.html
+        else
+            echo $line >> $clearFile.html
+        fi
+    done < base.html
 done
+
