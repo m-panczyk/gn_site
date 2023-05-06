@@ -1,7 +1,11 @@
 * {
         box-sizing: border-box;
 }
-
+.container {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+}
 .row:before,
 .row:after {
         content:"";
@@ -15,7 +19,7 @@
 #menu{
     display: unset;
 }
-img{
+#logo{
     width: auto;
     max-width: -webkit-fill-available;
     height: auto;
@@ -36,7 +40,7 @@ header{
     #menu{
         display: none;
     }
-    img{
+    #logo{
         width: auto;
         max-width: -webkit-fill-available;
         height: auto;
@@ -54,9 +58,6 @@ header{
 }
 body{
     margin: 8%;
-}
-td{
-    border-style: groove;
 }
 nav ul {
     list-style-type: none;

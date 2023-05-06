@@ -1,0 +1,12 @@
+body,select{
+    background-color: #333;
+    color: #ddd;
+}
+a:link{
+    color: #ddd;
+    text-decoration: none;
+}
+a:visited{
+    color: #aaa;
+    text-decoration: none;
+}
