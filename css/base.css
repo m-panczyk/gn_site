@@ -28,6 +28,10 @@ img{
 header{
     text-align: center;
 }
+section {
+    display: flex;
+    flex-direction: column;
+}
   @media only screen and (orientation: landscape) {
     /* For desktop: */
     .col-auto {width: auto;} 
@@ -35,6 +39,9 @@ header{
     .col-2 {width: 100%;}
     #menu{
         display: none;
+    }
+    section {
+        flex-direction: row;
     }
     img{
         width: auto;
