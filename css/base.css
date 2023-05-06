@@ -28,7 +28,7 @@ img{
 header{
     text-align: center;
 }
-section {
+.flex_section {
     display: flex;
     flex-direction: column;
 }
@@ -40,7 +40,7 @@ section {
     #menu{
         display: none;
     }
-    section {
+    .flex_section {
         flex-direction: row;
     }
     img{
