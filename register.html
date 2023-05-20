@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/light.css" id="css-link">
-      <title>gn - O autorach</title> 
+    <title>GN - Rejestracja</title>
 </head>
 <body>
 <select id="css-list" class="rt-float">
@@ -33,13 +33,22 @@
 </nav>
 </header>
 <main>
-      <section>
-      <h2 class="col-2">O autorach</h2>
-      <div class="flex_container">
-        <p class="col-1">Jesteśmy zespół pasjonatów programowania z dużym doświadczeniem w tworzeniu aplikacji webowych. GN to jeden z naszych projektów, który powstał z myślą o ułatwieniu organizacji notatek związanych z geolokalizacją.</p>
-      <img class="col-1" src="team_photo.png" alt="Zdjęcie zespołu">
-      </div>
-    </section>
+    <section>
+        <h2>Rejestracja</h2>
+
+        <form action="register.php" method="POST">
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" name="username" id="username" required>
+
+            <label for="password">Hasło:</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="address">Adres:</label>
+            <textarea name="address" id="address" required></textarea>
+
+            <button type="submit">Zarejestruj</button>
+        </form>
+	</section>
 </main>
 <script src="script.js"></script>
 </body>

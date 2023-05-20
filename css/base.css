@@ -15,6 +15,7 @@
 #menu{
     display: unset;
 }
+
 img{
     width: auto;
     max-width: -webkit-fill-available;
@@ -31,6 +32,13 @@ header{
 .flex_container {
     display: flex;
     flex-direction: column;
+}
+.merchandise-item{
+	display: flex;
+	flex-direction: column;
+}
+.merchandise-item input{
+	max-width: 90%;
 }
   @media only screen and (orientation: landscape) {
     /* For desktop: */

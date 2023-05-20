@@ -2,4 +2,6 @@
 *.zip
 *.sh
 *.base.html
+*.base.php
+base.php
 base.html
